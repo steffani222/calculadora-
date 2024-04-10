@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <style>
+        body {
+    background-color: #d45555; 
+}
+    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Suma</title>
+  <style>
+    body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+    .container { text-align: center; }
+    .container input { width: 50px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Suma</h1>
+    <input id="num1" type="number" value="3">
+    <span>+</span>
+    <input id="num2" type="number" value="4"><br>
+    <button onclick="document.getElementById('resultado').innerText = 'El resultado de la suma es: ' + (parseFloat(num1.value) + parseFloat(num2.value));">Calcular</button><br>
+    <p id="resultado"></p>
+  </div>
+</body>
+</html>
